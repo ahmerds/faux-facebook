@@ -1,6 +1,6 @@
 # Second Stage Evaluation
 A RESTful API that mimics Facebook's post functionality 😁\
-Find the Postman Documentation here [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ed40b5919e9142c3e232)
+Find the Postman Documentation here [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/11006301/TzK17aco)
 
 
 ## Dependencies
