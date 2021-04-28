@@ -2,9 +2,8 @@ process.env.NODE_ENV = "test"
 // We do not want emails to get sent during tests
 process.env.SMTP_PASSWORD = "No"
 
-import fs from 'fs'
 
-import { describe, it, before, beforeEach, after } from "mocha"
+import { describe, it, before, after } from "mocha"
 import chai from "chai";
 import chaiHttp = require("chai-http")
 
@@ -12,11 +11,9 @@ chai.use(chaiHttp);
 const should = chai.should();
 
 import app from "../src"
-import { AuthService } from "../src/services/Auth"
 
 import { User } from "../src/entity/User"
 
-const authService = new AuthService()
 
 describe("Auth Service", function() {
     before((done) => {

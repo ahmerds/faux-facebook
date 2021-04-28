@@ -2,7 +2,7 @@ process.env.NODE_ENV = "test"
 
 import fs from 'fs'
 
-import { describe, it, before, beforeEach, after } from "mocha"
+import { describe, it, before, after } from "mocha"
 import chai from "chai";
 import chaiHttp = require("chai-http")
 
@@ -10,7 +10,6 @@ chai.use(chaiHttp);
 const should = chai.should();
 
 import app from "../src"
-import { User } from "../src/entity/User"
 
 describe("Post Service", function() {
     let accessToken
