@@ -1,0 +1,20 @@
+{
+   "type": "better-sqlite3",
+   "database": "./data.db",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "dist/entity/**/*.js"
+   ],
+   "migrations": [
+      "dist/migration/**/*.js"
+   ],
+   "subscribers": [
+      "dist/subscribers/**/*.js"
+   ],
+   "cli": {
+      "entitiesDir": "dist/entity",
+      "migrationsDir": "dist/migration",
+      "subscribersDir": "dist/subscribers/typeorm"
+   }
+}

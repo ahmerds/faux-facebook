@@ -1,0 +1,27 @@
+version: "3.9"
+
+services: 
+  redis_db:
+    image: redis:alpine
+    volumes:
+      - redisdata:/data
+
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+    depends_on: 
+      - redis_db
+    links:
+      - redis_db
+    env_file: 
+      - .env
+
+volumes:
+  redisdata:
+    driver: local
+  app:
+    driver: local
