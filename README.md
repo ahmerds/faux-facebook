@@ -27,4 +27,4 @@ Before running the command, make sure you have your environment variables correc
 \
 &nbsp;
 \
-Note that this app does not have full test coverage
+Good luck 💪🏾
