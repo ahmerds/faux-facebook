@@ -12,7 +12,7 @@ const should = chai.should();
 import app from "../src"
 import { User } from "../src/entity/User"
 
-describe("Management Service", function() {
+describe("Post Service", function() {
     let accessToken
     before((done) => {
       chai.request(app)
