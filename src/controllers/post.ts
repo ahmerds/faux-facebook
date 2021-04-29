@@ -61,6 +61,12 @@ export async function getPost(req: Request, res: Response) {
         })
     } catch (err) {
         logger.error(`Error in postController: ${err}`)
+        if(String(err).includes("EntityNotFound")) {
+            return res.status(404).json({
+                error: true,
+                message: "Post not found"
+            })
+        }
         res.status(500).json({
             error: true,
             message: "Could not fetch post"
